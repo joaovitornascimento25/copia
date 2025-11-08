@@ -18,7 +18,7 @@ body{
 }
 
 header{
-    height: 113px;
+    height: 135px;
     background-color: var(--cor3);
     text-align: center;
     padding-top: 12px;
@@ -30,6 +30,7 @@ font-family: var(--fonte1);
  box-shadow: 3px 3px 10px  rgba(0, 0, 0, 0.473);
 text-shadow:  3px 3px  rgba(0, 0, 0, 0.247);;
 background-color: #034621;
+padding-bottom: 20px;
 }
 
 header>p{
@@ -45,6 +46,7 @@ header>p{
 nav{
     text-align: left;
     padding-top: 20px;
+    margin-left: 20px;
 }
 
 nav>a{

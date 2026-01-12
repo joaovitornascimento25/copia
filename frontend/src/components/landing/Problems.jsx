@@ -18,7 +18,7 @@ const Problems = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             {problemsData.title}
           </h2>
-          <p className="text-lg text-[rgb(218,218,218)]">
+          <p className="text-lg text-[#d1d1d1]">
             {problemsData.subtitle}
           </p>
         </div>
@@ -30,7 +30,7 @@ const Problems = () => {
             return (
               <div 
                 key={index}
-                className="group bg-[rgb(26,28,30)] border border-[rgba(255,255,255,0.1)] rounded-2xl p-8 transition-all duration-300 hover:translate-y-[-4px] hover:border-red-500/50 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] relative overflow-hidden"
+                className="group bg-[#0a0a0a] border border-white/10 rounded-2xl p-8 transition-all duration-300 hover:translate-y-[-4px] hover:border-red-500/50 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] relative overflow-hidden"
               >
                 {/* Hover accent */}
                 <div className="absolute top-0 left-0 right-0 h-[2px] bg-red-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -43,7 +43,7 @@ const Problems = () => {
                     <h3 className="text-xl font-semibold text-white mb-2">
                       {problem.title}
                     </h3>
-                    <p className="text-[rgb(161,161,170)] leading-relaxed">
+                    <p className="text-[#888888] leading-relaxed">
                       {problem.description}
                     </p>
                   </div>

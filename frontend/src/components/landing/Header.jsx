@@ -26,7 +26,7 @@ const Header = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-[rgb(17,17,19)]/95 backdrop-blur-md border-b border-[rgba(255,255,255,0.1)]' 
+          ? 'bg-black/95 backdrop-blur-md border-b border-white/10' 
           : 'bg-transparent'
       }`}
     >
@@ -34,7 +34,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="text-2xl font-bold text-white">
-            <span className="text-[rgb(218,255,1)]">Vibe</span>
+            <span className="text-[#0054C5]">Vibe</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -43,7 +43,7 @@ const Header = () => {
               <a 
                 key={index}
                 href={link.href}
-                className="text-[rgb(218,218,218)] hover:text-white transition-colors text-sm font-medium"
+                className="text-[#d1d1d1] hover:text-[#05DBF2] transition-colors text-sm font-medium"
               >
                 {link.label}
               </a>
@@ -54,7 +54,7 @@ const Header = () => {
           <div className="hidden md:block">
             <a href={heroData.ctaLink} target="_blank" rel="noopener noreferrer">
               <Button 
-                className="bg-[rgb(218,255,1)] hover:bg-[rgb(166,190,21)] text-[rgb(17,17,19)] font-semibold px-5 py-2.5 h-auto rounded-xl transition-all duration-200 hover:translate-y-[-1px] hover:shadow-[0_4px_15px_rgba(218,255,1,0.3)]"
+                className="bg-[#0054C5] hover:bg-[#003d91] text-white font-semibold px-5 py-2.5 h-auto rounded-xl transition-all duration-200 hover:translate-y-[-1px] hover:shadow-[0_4px_15px_rgba(0,84,197,0.4)]"
               >
                 <MessageCircle className="w-4 h-4 mr-2" />
                 WhatsApp
@@ -74,14 +74,14 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-20 left-0 right-0 bg-[rgb(17,17,19)]/98 backdrop-blur-lg border-b border-[rgba(255,255,255,0.1)]">
+          <div className="md:hidden absolute top-20 left-0 right-0 bg-black/98 backdrop-blur-lg border-b border-white/10">
             <nav className="container mx-auto px-6 py-6">
               <div className="flex flex-col gap-4">
                 {navLinks.map((link, index) => (
                   <a 
                     key={index}
                     href={link.href}
-                    className="text-[rgb(218,218,218)] hover:text-white transition-colors py-2 text-lg"
+                    className="text-[#d1d1d1] hover:text-[#05DBF2] transition-colors py-2 text-lg"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {link.label}
@@ -94,7 +94,7 @@ const Header = () => {
                   className="mt-4"
                 >
                   <Button 
-                    className="w-full bg-[rgb(218,255,1)] hover:bg-[rgb(166,190,21)] text-[rgb(17,17,19)] font-semibold px-5 py-3 h-auto rounded-xl"
+                    className="w-full bg-[#0054C5] hover:bg-[#003d91] text-white font-semibold px-5 py-3 h-auto rounded-xl"
                   >
                     <MessageCircle className="w-5 h-5 mr-2" />
                     Chamar no WhatsApp

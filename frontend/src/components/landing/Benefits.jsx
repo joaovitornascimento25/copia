@@ -20,7 +20,7 @@ const Benefits = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             {benefitsData.title}
           </h2>
-          <p className="text-lg text-[rgb(218,218,218)]">
+          <p className="text-lg text-[#d1d1d1]">
             {benefitsData.subtitle}
           </p>
         </div>
@@ -32,15 +32,15 @@ const Benefits = () => {
             return (
               <div 
                 key={index}
-                className="group p-6 rounded-2xl bg-[rgb(26,28,30)] border border-[rgba(255,255,255,0.1)] transition-all duration-300 hover:border-[rgba(218,255,1,0.3)] hover:bg-[rgb(38,40,42)]"
+                className="group p-6 rounded-2xl bg-[#0a0a0a] border border-white/10 transition-all duration-300 hover:border-[#05DBF2]/30 hover:bg-[#111111]"
               >
-                <div className="w-12 h-12 rounded-xl bg-[rgba(218,255,1,0.1)] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  {IconComponent && <IconComponent className="w-6 h-6 text-[rgb(218,255,1)]" />}
+                <div className="w-12 h-12 rounded-xl bg-[#0054C5]/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  {IconComponent && <IconComponent className="w-6 h-6 text-[#05DBF2]" />}
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">
                   {benefit.title}
                 </h3>
-                <p className="text-[rgb(161,161,170)] text-sm leading-relaxed">
+                <p className="text-[#888888] text-sm leading-relaxed">
                   {benefit.description}
                 </p>
               </div>

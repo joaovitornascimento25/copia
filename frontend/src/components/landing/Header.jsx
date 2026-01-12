@@ -3,6 +3,8 @@ import { heroData } from '../../data/mock';
 import { Button } from '../ui/button';
 import { MessageCircle, Menu, X } from 'lucide-react';
 
+const LOGO_URL = "https://customer-assets.emergentagent.com/job_b8775109-8ba8-4c76-a42b-45d1435a3175/artifacts/dnrh6q2x_Design%20sem%20nome.png";
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -33,8 +35,12 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="text-2xl font-bold text-white">
-            <span className="text-[#0054C5]">Vibe</span>
+          <a href="#" className="flex items-center">
+            <img 
+              src={LOGO_URL} 
+              alt="Vibe" 
+              className="h-10 md:h-12 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}

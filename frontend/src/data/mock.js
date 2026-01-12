@@ -128,7 +128,7 @@ export const ctaData = {
   title: "Pronto para parar de perder vendas?",
   subtitle: "Fale com a gente agora e descubra como triplicar suas mensagens qualificadas em 30 dias.",
   ctaText: "Chamar no WhatsApp",
-  ctaLink: "https://wa.me/5511999999999?text=Olá!%20Quero%20saber%20mais%20sobre%20os%20serviços%20da%20Vibe",
+  ctaLink: "https://api.whatsapp.com/send?phone=5562991216413",
   guarantee: "Sem compromisso. Análise gratuita do seu negócio."
 };
 

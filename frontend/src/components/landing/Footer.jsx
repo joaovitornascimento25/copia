@@ -2,8 +2,6 @@ import React from 'react';
 import { footerData, heroData } from '../../data/mock';
 import { MessageCircle, Instagram, Linkedin, Mail } from 'lucide-react';
 
-const LOGO_URL = "https://customer-assets.emergentagent.com/job_b8775109-8ba8-4c76-a42b-45d1435a3175/artifacts/dnrh6q2x_Design%20sem%20nome.png";
-
 const Footer = () => {
   return (
     <footer className="bg-[#0a0a0a] border-t border-white/10 pt-16 pb-8">
@@ -11,13 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
           <div className="md:col-span-2">
-            <a href="#" className="inline-block mb-4">
-              <img 
-                src={LOGO_URL} 
-                alt="Vibe" 
-                className="h-10 w-auto"
-              />
-            </a>
+            <h3 className="text-2xl font-bold text-white mb-4">
+              <span className="text-[#0054C5]">Vibe</span>
+            </h3>
             <p className="text-[#888888] mb-6 max-w-sm leading-relaxed">
               {footerData.tagline}
             </p>

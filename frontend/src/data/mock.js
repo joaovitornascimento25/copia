@@ -5,7 +5,7 @@ export const heroData = {
   headlineHighlight: "Precisa de mais clientes.",
   subheadline: "A Vibe transforma seu tráfego em vendas reais com Design Estratégico, Tráfego Pago e Automação inteligente via WhatsApp.",
   ctaText: "Chamar no WhatsApp",
-  ctaLink: "https://wa.me/5511999999999?text=Olá!%20Quero%20saber%20mais%20sobre%20os%20serviços%20da%20Vibe",
+  ctaLink: "https://api.whatsapp.com/send?phone=5562991216413",
   stats: [
     { value: "+300%", label: "Aumento em mensagens" },
     { value: "24h", label: "Resposta automática" },

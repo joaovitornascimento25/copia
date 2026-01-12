@@ -4,36 +4,36 @@ import { MessageCircle, Instagram, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[rgb(26,28,30)] border-t border-[rgba(255,255,255,0.1)] pt-16 pb-8">
+    <footer className="bg-[#0a0a0a] border-t border-white/10 pt-16 pb-8">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold text-white mb-4">
-              <span className="text-[rgb(218,255,1)]">Vibe</span>
+              <span className="text-[#0054C5]">Vibe</span>
             </h3>
-            <p className="text-[rgb(161,161,170)] mb-6 max-w-sm leading-relaxed">
+            <p className="text-[#888888] mb-6 max-w-sm leading-relaxed">
               {footerData.tagline}
             </p>
             {/* Social Links */}
             <div className="flex gap-3">
               <a 
                 href="#" 
-                className="w-10 h-10 rounded-lg bg-[rgb(38,40,42)] flex items-center justify-center text-[rgb(161,161,170)] hover:bg-[rgb(218,255,1)] hover:text-[rgb(17,17,19)] transition-all duration-200 hover:translate-y-[-2px]"
+                className="w-10 h-10 rounded-lg bg-[#111111] flex items-center justify-center text-[#888888] hover:bg-[#0054C5] hover:text-white transition-all duration-200 hover:translate-y-[-2px]"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="w-10 h-10 rounded-lg bg-[rgb(38,40,42)] flex items-center justify-center text-[rgb(161,161,170)] hover:bg-[rgb(218,255,1)] hover:text-[rgb(17,17,19)] transition-all duration-200 hover:translate-y-[-2px]"
+                className="w-10 h-10 rounded-lg bg-[#111111] flex items-center justify-center text-[#888888] hover:bg-[#0054C5] hover:text-white transition-all duration-200 hover:translate-y-[-2px]"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="w-10 h-10 rounded-lg bg-[rgb(38,40,42)] flex items-center justify-center text-[rgb(161,161,170)] hover:bg-[rgb(218,255,1)] hover:text-[rgb(17,17,19)] transition-all duration-200 hover:translate-y-[-2px]"
+                className="w-10 h-10 rounded-lg bg-[#111111] flex items-center justify-center text-[#888888] hover:bg-[#0054C5] hover:text-white transition-all duration-200 hover:translate-y-[-2px]"
                 aria-label="Email"
               >
                 <Mail className="w-5 h-5" />
@@ -49,7 +49,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-[rgb(161,161,170)] hover:text-[rgb(218,255,1)] transition-colors"
+                    className="text-[#888888] hover:text-[#05DBF2] transition-colors"
                   >
                     {link.label}
                   </a>
@@ -65,7 +65,7 @@ const Footer = () => {
               href={heroData.ctaLink} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-[rgba(218,255,1,0.1)] border border-[rgba(218,255,1,0.2)] text-[rgb(218,255,1)] font-medium hover:bg-[rgba(218,255,1,0.2)] transition-colors"
+              className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-[#0054C5]/10 border border-[#0054C5]/30 text-[#05DBF2] font-medium hover:bg-[#0054C5]/20 transition-colors"
             >
               <MessageCircle className="w-5 h-5" />
               WhatsApp
@@ -74,8 +74,8 @@ const Footer = () => {
         </div>
         
         {/* Bottom Bar */}
-        <div className="border-t border-[rgba(255,255,255,0.1)] pt-8">
-          <p className="text-center text-sm text-[rgb(161,161,170)]">
+        <div className="border-t border-white/10 pt-8">
+          <p className="text-center text-sm text-[#888888]">
             {footerData.copyright}
           </p>
         </div>
